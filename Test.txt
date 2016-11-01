@@ -6,14 +6,17 @@ Hvordan å bruke terminal
 logge på - ssh root@129.241.162.113
 password: raspberry eller haga
 
+cd Oving6_Plab - gå inn i mappen
 git pull - for å oppdatere
+cd basic_robot - der vi har filene
+
 
 for å Kjøre:
 python3
-from filnavn.py import*
+from filnavn.py import *
 
 
-
+exit eller logout - for å avslutte
 
 ls - sjekker hva som er i mappen
 
