@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97ac92-1cc3-4946-9e74-1216cb6c5e4a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Oving6_Plab.iml" afterPath="$PROJECT_DIR$/.idea/Oving6_Plab.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_robot/robodemo.py" afterPath="$PROJECT_DIR$/basic_robot/robodemo.py" />
     </list>
     <ignored path="Oving6_Plab.iws" />
@@ -92,8 +94,8 @@
       <file leaf-file-name="robodemo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic_robot/robodemo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -611,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/robodemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

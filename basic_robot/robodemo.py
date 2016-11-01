@@ -1,4 +1,4 @@
-from basic_robot.crash_sensor import Crash_sensor
+from crash_sensor import Crash_sensor
 
 __author__ = 'keithd'
 
