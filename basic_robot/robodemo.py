@@ -16,16 +16,16 @@ from zumo_button import ZumoButton
 # This just moves the robot around in a fixed dance pattern.  It uses no sensors.
 
 def dancer():
-    ZumoButton().wait_for_press()
+    #ZumoButton().wait_for_press()
     m = Motors()
 
-    #m.forward(.2,3)
-    #m.backward(.2,3)
-    #m.right(.5,3)
+    m.forward(.2,3)
+    m.backward(.2,3)
+    m.right(.5,3)
     m.left(.5,3)
-    #m.backward(.3,2.5)
-    #m.set_value([.5,.1],10)
-    #m.set_value([-.5,-.1],10)
+    m.backward(.3,2.5)
+    m.set_value([.5,.1],10)
+    m.set_value([-.5,-.1],10)
 
 
 # This tests the UV (distance) sensors.  The robot moves forward to within 10 cm of the nearest obstacle.  It
