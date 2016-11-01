@@ -35,7 +35,26 @@ def crashTest():
     ZumoButton().wait_for_press()
 
     sensor = Crash_sensor()
-    sensor.calculate()
+
+    motor = Motors()
+
+    while True:
+
+        f_value = sensor.calculateFront()
+        ir_command = sensor.IR_command()
+
+        if ir_command == "LEFT":
+
+            motor.left(0.5, 3)
+        elif ir_command == "RIGHT":
+            motor.right(0.5, 3)
+        else:
+            motor.forward(.5, 3)
+
+        if f_value == 10000:
+            motor.stop()
+            break
+
 
 # This tests the UV (distance) sensors.  The robot moves forward to within 10 cm of the nearest obstacle.  It
 # then does a little dancing before backing up to approximately 50 cm from the nearest obstacle.
