@@ -1,5 +1,5 @@
-from basic_robot.motors import Motors
-from basic_robot.ultrasonic import Ultrasonic
+from motors import Motors
+from ultrasonic import Ultrasonic
 
 
 class Crash_sensor():
