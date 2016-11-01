@@ -41,7 +41,7 @@ def crashTest():
     while True:
 
         f_value = sensor.calculateFront()
-        ir_command = sensor.IR_command()
+        ir_command = sensor.calculateSides()
 
         if ir_command == "LEFT":
 
