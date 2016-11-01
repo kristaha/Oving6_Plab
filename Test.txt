@@ -1,1 +1,19 @@
 Test
+jepp jeppp
+
+
+Hvordan å bruke terminal
+logge på - ssh root@129.241.162.113
+password: raspberry eller haga
+
+git pull - for å oppdatere
+
+for å Kjøre:
+python3
+from filnavn.py import*
+
+
+
+
+ls - sjekker hva som er i mappen
+
