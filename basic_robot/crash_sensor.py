@@ -15,14 +15,21 @@ class Crash_sensor():
 
         motors = Motors()
 
-        motors.forward(.2, 3)
 
-        u_sensor.update()
-        distance = u_sensor.get_value()
 
-        if distance < 3:
+        while True:
 
-            motors.stop()
+            u_sensor.update()
+            distance = u_sensor.get_value()
+            motors.forward(.2, 3)
+            if distance < 3:
+                motors.stop()
+                break
+
+
+
+
+
 
 
 
