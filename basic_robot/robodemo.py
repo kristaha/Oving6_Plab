@@ -18,10 +18,11 @@ from zumo_button import ZumoButton
 def dancer():
     ZumoButton().wait_for_press()
     m = Motors()
-    m.forward(.2,3)
+
+    #m.forward(.2,3)
     m.backward(.2,3)
-    m.right(.5,3)
-    m.left(.5,3)
+    #m.right(.5,3)
+    #m.left(.5,3)
     m.backward(.3,2.5)
     m.set_value([.5,.1],10)
     m.set_value([-.5,-.1],10)
@@ -72,3 +73,6 @@ def shoot_panorama(camera,motors,shots=5):
         im = im.concat_horiz(IMR.Imager(image=camera.update()))
     return im
 
+#dancer()
+#explorer()
+#tourist()
