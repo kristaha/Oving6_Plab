@@ -1,4 +1,4 @@
-from crash_sensor import Crash_sensor
+#from crash_sensor import Crash_sensor
 
 __author__ = 'keithd'
 
@@ -30,12 +30,12 @@ def dancer():
     m.set_value([.5,.1],10)
     m.set_value([-.5,-.1],10)
 
-
+"""
 def crashTest():
     ZumoButton().wait_for_press()
 
     sensor = Crash_sensor()
-    sensor.calculate()
+    sensor.calculate()"""
 
 # This tests the UV (distance) sensors.  The robot moves forward to within 10 cm of the nearest obstacle.  It
 # then does a little dancing before backing up to approximately 50 cm from the nearest obstacle.
