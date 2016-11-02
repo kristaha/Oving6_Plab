@@ -31,7 +31,7 @@ class MotorAction():
         elif value == "RIGHT":
             self.crashRight()
         elif value == "FORWARD":
-            self.followLine(0)
+            self.followLine(self.getValue().getPriValues()[1])
 
 
 
