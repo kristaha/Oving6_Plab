@@ -11,6 +11,7 @@ from motors import Motors
 from ultrasonic import Ultrasonic
 from zumo_button import ZumoButton
 from FollowLine import FollowLine
+from processPic import ProcessPic
 
 
 ## BE SURE TO RUN THESE DEMOS ON THE FLOOR or to have plenty of people guarding
@@ -140,7 +141,6 @@ def cameraTest():
     camera = Camera()
     s = 1
     im = IMR.Imager(image=camera.update()).scale(s,s)
-    im = im.map_color_wta()
     im.dump_image("/root/Oving6_Plab/basic_robot/bilder/test2.png")
 
 
@@ -149,5 +149,6 @@ def cameraTest():
 #followTest()
 #explorer()
 #tourist()
-cameraTest()
+#cameraTest()
+test = ProcessPic()
 
