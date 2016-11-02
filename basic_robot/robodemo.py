@@ -51,18 +51,18 @@ def crashTest():
             ir_command = sensor.calculateSides()
             counter = 0
 
+        if ir_command == "LEFT":
+
+            motor.left(1, 0.2)
+
+        elif ir_command == "RIGHT":
+            motor.right(1, 0.2)
+        else:
+            motor.forward(0.3, 0.1)
+
         if f_value == 10000:
             motor.stop()
             break
-
-        if ir_command == "LEFT":
-
-            motor.left(0.1, 0.1)
-
-        elif ir_command == "RIGHT":
-            motor.right(0.1, 0.1)
-        else:
-            motor.forward(0.1, 0.1)
 
 
 
