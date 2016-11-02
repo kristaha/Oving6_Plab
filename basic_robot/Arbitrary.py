@@ -9,7 +9,7 @@ class Arbitrary:
 
         self.crash_sensor = Crash_sensor()
         self.follow_line = FollowLine()
-        self.camera_sensor = ProcessPic()
+        #self.camera_sensor = ProcessPic()
 
     def priority_sensor(self):
 
