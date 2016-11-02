@@ -57,10 +57,12 @@ def crashTest():
 
         elif ir_command == "RIGHT":
             motor.right(0.5, 0.2)
+        elif ir_command == "BACKWARD":
+            motor.backward(0.3, 0.5)
         else:
             motor.forward(0.3, 0.1)
 
-        if f_value == 10000:
+        if f_value == 1000:
             motor.stop()
             break
 

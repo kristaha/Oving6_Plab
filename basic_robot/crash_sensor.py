@@ -32,8 +32,8 @@ class Crash_sensor():
         u_sensor = Ultrasonic()
         u_sensor.update()
         distance = u_sensor.get_value()
-        if distance < 15:
-            self.pri_value = 10000
+        if distance < 10:
+            self.pri_value = 1000
 
         else:
             self.pri_value = 0
@@ -48,9 +48,12 @@ class Crash_sensor():
 
         values = ir_proxy_sensor.get_value()
 
-        if values[0] == values[1] == False or values[0] == values[1] == True:
+        if values[0] == values[1] == False or values[0] == values[1] == True and self.pri_value == 0:
 
             self.IR_command = "FORWARD"
+        elif values[0] == values[1] == False or values[0] == values[1] == True and self.pri_value == 1000:
+            self.IR_command = "BACKWARD"
+
         elif values[1] == True and values[0] == False:
             self.IR_command = "RIGHT"
 
