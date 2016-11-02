@@ -41,18 +41,15 @@ def crashTest():
     counter = 0
     f_value = sensor.calculateFront()
     ir_command = sensor.calculateSides()
+
     while True:
 
         counter += 1
-        if counter==20:
+        if counter >= 20:
 
             f_value = sensor.calculateFront()
             ir_command = sensor.calculateSides()
             counter = 0
-
-        if f_value == 10000:
-            motor.stop()
-            break
 
         if ir_command == "LEFT":
 
@@ -62,6 +59,10 @@ def crashTest():
             motor.right(0.1, 0.1)
         else:
             motor.forward(0.1, 0.1)
+
+        if f_value == 10000:
+            motor.stop()
+            break
 
 
 
