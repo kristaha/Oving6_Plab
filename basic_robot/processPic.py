@@ -7,21 +7,27 @@ class ProcessPic:
 
     def __init__(self):
         self.cam = Camera()
-        self.im = IMR.Imager("bilder/test2.png")
+        self.im = None  # IMR.Imager("bilder/test2.png")
         self.s = 1
 
     def takePic(self):
         return IMR.Imager(image=self.cam.update().scale(self.s, self.s))
 
     def process(self):
-        #self.im = self.takePic()
+        self.im = self.takePic()
         x, y = range(self.im.xmax), range(self.im.ymax)
-        counter = 0
+        redCounter = 0
+        blueCounter = 0
         for i in x:
             for j in y:
-                pix = self.im.get_pixel(i,j)
-                print(pix)
-
-
-#test = ProcessPic()
-#test.process()
+                pix = self.im.get_pixel(i,j) # HAR BRUK BLÅ OG IKKE GRØNN!!!
+                if (pix[1] < 100) and (pix[2] < 100):
+                    redCounter += 1
+                elif (pix[0] < 100) and (pix[1] < 100):
+                    blueCounter += 1
+        if redCounter > 400:
+            return 1000
+        elif blueCounter > 400:
+            return 0
+        else:
+            self.process()
