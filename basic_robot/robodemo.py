@@ -140,7 +140,7 @@ def cameraTest():
     camera = Camera()
     s = 1
     im = IMR.Imager(image=camera.update()).scale(s,s)
-    im = im.map_colur_wta()
+    im = im.map_color_wta()
     im.dump_image("/root/Oving6_Plab/basic_robot/bilder/test2.jpg")
     return
 
