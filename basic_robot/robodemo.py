@@ -128,9 +128,9 @@ def followTest():
         if values[0] == 0:
             m.forward(0.2, 0.2)
         elif values[1] == 0 or values[1]==1:
-            m.left(0.2,0.2)
+            m.left(0.5,0.5)
         else:
-            m.right(0.2,0.2)
+            m.right(0.5,0.5)
         time += 1
 
 
