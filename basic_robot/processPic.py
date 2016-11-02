@@ -23,5 +23,5 @@ class ProcessPic:
                 print(pix)
 
 
-test = ProcessPic()
-test.process()
+#test = ProcessPic()
+#test.process()
