@@ -137,7 +137,7 @@ def followTest():
         time += 1
 
 def cameraTest():
-    None
+    return
 
 
 #dancer()
