@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf97ac92-1cc3-4946-9e74-1216cb6c5e4a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_robot/MotorAction.py" afterPath="$PROJECT_DIR$/basic_robot/MotorAction.py" />
-    </list>
+    <list default="true" id="bf97ac92-1cc3-4946-9e74-1216cb6c5e4a" name="Default" comment="" />
     <ignored path="Oving6_Plab.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
