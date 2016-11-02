@@ -32,8 +32,6 @@ class MotorAction():
             self.crashRight()
 
 
-
-
     def crashLeft(self):
         self.motorList[0].stop()
         self.motorList[0].right(0.4,0.4)
@@ -77,7 +75,6 @@ class MotorAction():
             elif type(value) == FollowLine():
 
                 self.followLine(value.getPriValues()[1])
-                print("FOLLOWLINE_CALLED")
 
             elif type(value) == Crash_sensor:
 
