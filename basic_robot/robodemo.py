@@ -54,10 +54,10 @@ def crashTest():
 
         if ir_command == "LEFT":
 
-            motor.left(0.5, 0.2)
+            motor.left(0.5, 0.1)
 
         elif ir_command == "RIGHT":
-            motor.right(0.5, 0.2)
+            motor.right(0.5, 0.1)
         elif ir_command == "BACKWARD":
             motor.backward(0.3, 0.5)
         else:
