@@ -37,11 +37,11 @@ class MotorAction():
 
     def crashLeft(self):
         self.motorList[0].stop()
-        self.motorList[0].right(0.2,0.4)
+        self.motorList[0].right(0.4,0.4)
 
     def crashRight(self):
         self.motorList[0].stop()
-        self.motorList[0].left(0.2, 0.4)
+        self.motorList[0].left(0.4, 0.4)
 
     def followLine(self,indexOfSensor):
 
