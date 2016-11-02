@@ -23,6 +23,11 @@ class MotorAction():
 
 #Handlinger ved forskjellige pri_sensorer
     def crash(self, value):
+
+        """if value == "FORWARD":
+            self.motorList[0].stop()
+            self.motorList[0].backward(0.3, 0.4)"""
+
         if value == "BACKWARD":
             self.motorList[0].stop()
             self.motorList[0].backward(0.3,0.4)
