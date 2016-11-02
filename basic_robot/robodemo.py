@@ -133,9 +133,14 @@ def followTest():
             m.right(0.5,0.5)
         time += 1
 
+def cameraTest():
+    None
+
 
 #dancer()
-crashTest()
+#crashTest()
 #followTest()
 #explorer()
 #tourist()
+#cameraTest()
+shoot_panorama()
