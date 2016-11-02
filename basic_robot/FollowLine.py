@@ -23,7 +23,7 @@ class FollowLine:
 
     # I arbitary klassen bruker jeg bare retur vediene til isOnLine() som prioriteringsverdier
     # Da blir det priverdier mellom 0-1000
-    
+
 
 
 

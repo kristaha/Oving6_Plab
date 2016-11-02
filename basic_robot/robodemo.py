@@ -10,6 +10,7 @@ from camera import Camera
 from motors import Motors
 from ultrasonic import Ultrasonic
 from zumo_button import ZumoButton
+from FollowLine import FollowLine
 
 
 ## BE SURE TO RUN THESE DEMOS ON THE FLOOR or to have plenty of people guarding
@@ -117,7 +118,24 @@ def shoot_panorama(camera,motors,shots=5):
         im = im.concat_horiz(IMR.Imager(image=camera.update()))
     return im
 
+def followTest():
+    ZumoButton().wait_for_press()
+    m = Motors()
+    follow = FollowLine()
+    time = 0
+    while(time < 100):
+        values = follow.isOnLine()
+        if values[0] == 0:
+            m.forward(0.2, 0.2)
+        elif values[1] == 0 or values[1]==1:
+            m.left(0.2,0.2)
+        else:
+            m.right(0.2,0.2)
+        time += 1
+
+
 #dancer()
-crashTest()
+#crashTest()
+#followTest()
 #explorer()
 #tourist()
