@@ -67,15 +67,15 @@ class MotorAction():
             value = self.getValue()
 
             if value == None:
-                print('frem')
+
                 self.noPri()
 
             elif type(value) == FollowLine():
-                print('linje')
+
                 self.followLine(value.getPriValues()[1])
 
             elif type(value) == Crash_sensor:
-                print('stop')
+
                 self.crash(value.getPriValues()[1])
             else:
                 self.camera(0)
