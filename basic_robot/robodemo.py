@@ -136,6 +136,6 @@ def followTest():
 
 #dancer()
 #crashTest()
-#followTest()
+followTest()
 #explorer()
 #tourist()
