@@ -46,7 +46,7 @@ def crashTest():
     while True:
 
         counter += 1
-        if counter >= 5:
+        if counter >= 20:
 
             f_value = sensor.calculateFront()
             ir_command = sensor.calculateSides()
@@ -61,7 +61,7 @@ def crashTest():
         elif ir_command == "BACKWARD":
             motor.backward(0.3, 0.5)
         else:
-            motor.forward(0.3, 0.1)
+            motor.forward(0.3, 0.01)
 
         if f_value == 1000:
             motor.stop()
