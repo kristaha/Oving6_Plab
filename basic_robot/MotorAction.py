@@ -30,7 +30,9 @@ class MotorAction():
             self.crashLeft()
         elif value == "RIGHT":
             self.crashRight()
-        
+        elif value == "FORWARD":
+            self.followLine(0)
+
 
 
     def crashLeft(self):
