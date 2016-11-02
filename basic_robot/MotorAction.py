@@ -23,13 +23,15 @@ class MotorAction():
 
 #Handlinger ved forskjellige pri_sensorer
     def crash(self, value):
-        if value == 'FORRWARD':
+        if value == "BACKWARD":
             self.motorList[0].stop()
             self.motorList[0].backward(0.2,0.4)
-        elif value == 'LEFT':
+        elif value == "LEFT":
             self.crashLeft()
-        else:
+        elif value == "RIGHT":
             self.crashRight()
+        
+
 
     def crashLeft(self):
         self.motorList[0].stop()
