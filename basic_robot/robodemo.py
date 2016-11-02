@@ -139,9 +139,9 @@ def cameraTest():
 
 #dancer()
 #crashTest()
-#followTest()
+followTest()
 #followTest()
 #explorer()
 #tourist()
 #cameraTest()
-shoot_panorama(Camera(), Motors())
+#shoot_panorama(Camera(), Motors())
