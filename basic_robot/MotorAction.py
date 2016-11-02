@@ -15,6 +15,7 @@ class MotorAction():
 
     def UpdateValue(self):
         self.value = self.arbit.priority_sensor()
+
     def getValue(self):
         return self.value
 
@@ -73,6 +74,8 @@ class MotorAction():
                 self.camera(0)
             
 
+run = MotorAction()
+run.drive()
 
 
 
