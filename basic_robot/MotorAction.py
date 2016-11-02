@@ -25,13 +25,12 @@ class MotorAction():
     def crash(self, value):
         if value == "BACKWARD":
             self.motorList[0].stop()
-            self.motorList[0].backward(0.2,0.4)
+            self.motorList[0].backward(0.3,0.4)
         elif value == "LEFT":
             self.crashLeft()
         elif value == "RIGHT":
             self.crashRight()
-        elif value == "FORWARD":
-            self.followLine(self.getValue().getPriValues()[1])
+
 
 
 
@@ -78,6 +77,7 @@ class MotorAction():
             elif type(value) == FollowLine():
 
                 self.followLine(value.getPriValues()[1])
+                print("FOLLOWLINE_CALLED")
 
             elif type(value) == Crash_sensor:
 
