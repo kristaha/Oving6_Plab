@@ -30,6 +30,8 @@ class MotorAction():
             self.crashLeft()
         elif value == "RIGHT":
             self.crashRight()
+        else:
+            self.motorList[0].forward(0.3, 0.4)
 
 
     def crashLeft(self):
@@ -42,7 +44,7 @@ class MotorAction():
 
     def followLine(self,indexOfSensor):
 
-        if indexOfSensor == 0 or indexOfSensor ==1:
+        if indexOfSensor == 0 or indexOfSensor == 1:
             self.motorList[0].left(0.2,0.3)
         else:
             self.motorList[0].right(0.2,0.3)
