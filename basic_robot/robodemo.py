@@ -109,7 +109,9 @@ def tourist(steps=25,shots=5,speed=.25):
             im = shoot_panorama(c,m,shots)
             im.dump_image('vacation_pic'+str(i)+'.jpeg')
 
-def shoot_panorama(camera,motors,shots=5):
+def shoot_panorama(shots=5):
+    camera = Camera()
+    motors = Motors()
     s = 1
     im = IMR.Imager(image=camera.update()).scale(s,s)
     rotation_time = 3/shots # At a speed of 0.5(of max), it takes about 3 seconds to rotate 360 degrees
@@ -144,4 +146,4 @@ def cameraTest():
 #explorer()
 #tourist()
 #cameraTest()
-shoot_panorama(Camera(), Motors())
+shoot_panorama()
