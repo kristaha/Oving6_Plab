@@ -54,10 +54,10 @@ def crashTest():
 
         if ir_command == "LEFT":
 
-            motor.left(0.5, 0.2)
+            motor.left(0.5, 0.1)
 
         elif ir_command == "RIGHT":
-            motor.right(0.5, 0.2)
+            motor.right(0.5, 0.1)
         elif ir_command == "BACKWARD":
             motor.backward(0.3, 0.5)
         else:
@@ -128,9 +128,9 @@ def followTest():
         if values[0] == 0:
             m.forward(0.2, 0.2)
         elif values[1] == 0 or values[1]==1:
-            m.left(0.5,0.5)
+            m.left(0.2,0.2)
         else:
-            m.right(0.5,0.5)
+            m.right(0.2,0.2)
         time += 1
 
 def cameraTest():
@@ -140,6 +140,7 @@ def cameraTest():
 #dancer()
 #crashTest()
 #followTest()
+followTest()
 #explorer()
 #tourist()
 #cameraTest()

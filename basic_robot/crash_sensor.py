@@ -11,22 +11,6 @@ class Crash_sensor():
 
         self.IR_command = ""
 
-    """
-    def calculate(self):
-
-        u_sensor = Ultrasonic()
-
-        motors = Motors()
-
-        while True:
-
-            u_sensor.update()
-            distance = u_sensor.get_value()
-            if distance < 20:
-                motors.stop()
-                break
-            motors.forward(.2, 3)"""
-
     def calculateFront(self):
 
         u_sensor = Ultrasonic()
@@ -62,17 +46,3 @@ class Crash_sensor():
 
         return self.IR_command
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #Ultraviolet og 
