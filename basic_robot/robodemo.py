@@ -119,7 +119,7 @@ def shoot_panorama(shots=5):
         print("Kjør!!!!")
         motors.right(0.5,rotation_time)
         im = im.concat_horiz(IMR.Imager(image=camera.update()))
-    im.dump_image("test.jpg")
+    im.dump_image("C:\\Users\\Martin\\PycharmProjects\\Semester3\\Proglab2\\testPic")
     return im
 
 def followTest():
