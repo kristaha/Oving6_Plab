@@ -48,6 +48,12 @@ class Crash_sensor():
         return self.IR_command
 
 
+    #def getPriValues(self):
+
+#        return[self.calculateFront(), self.calculateSides()]
+
     def getPriValues(self):
 
-        return[self.calculateFront(), self.calculateSides()]
+        return[self.pri_value, self.calculateSides()]
+
+

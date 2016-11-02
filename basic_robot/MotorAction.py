@@ -50,7 +50,7 @@ class MotorAction():
 
     def camera(self,value):
 
-        if value ==1:
+        if value == 1:
             self.motorList[0].stop()
         else:
             self.motorList[0].forward(0.6,0.2)
@@ -64,7 +64,7 @@ class MotorAction():
         ZumoButton().wait_for_press()
 
         time = 0
-        while( time < 100):
+        while time < 50:
             time += 1
             self.UpdateValue()
             value = self.getValue()
