@@ -3,6 +3,7 @@ from Arbitrary import Arbitrary
 from types import *
 from FollowLine import FollowLine
 from crash_sensor import Crash_sensor
+from zumo_button import ZumoButton
 
 class MotorAction():
 
@@ -57,6 +58,8 @@ class MotorAction():
 
 ## Kjøre def
     def drive(self):
+
+        ZumoButton().wait_for_press()
         time = 0
         while( time < 300):
             time += 1
