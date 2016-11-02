@@ -43,11 +43,16 @@ def crashTest():
     ir_command = sensor.calculateSides()
     while True:
 
+        counter += 1
         if counter==20:
 
             f_value = sensor.calculateFront()
             ir_command = sensor.calculateSides()
             counter = 0
+
+        if f_value == 10000:
+            motor.stop()
+            break
 
         if ir_command == "LEFT":
 
@@ -59,11 +64,7 @@ def crashTest():
             motor.forward(0.1, 0.1)
 
 
-        if f_value == 10000:
-            motor.stop()
-            break
 
-        counter+=1
 
 
 # This tests the UV (distance) sensors.  The robot moves forward to within 10 cm of the nearest obstacle.  It
