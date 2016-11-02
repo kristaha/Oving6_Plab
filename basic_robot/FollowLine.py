@@ -17,7 +17,7 @@ class FollowLine:
         nowValue = self.getValueList()
         offLineList = [0,1,4,5]
         for i in range(len(self.values)):
-            if i in offLineList and nowValue[i] > 500:
+            if i in offLineList and nowValue[i] > 400:
                 return [nowValue[i],i]
         return [0,10]
 
