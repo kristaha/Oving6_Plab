@@ -144,4 +144,4 @@ def cameraTest():
 #explorer()
 #tourist()
 #cameraTest()
-shoot_panorama()
+shoot_panorama(Camera(), Motors())
