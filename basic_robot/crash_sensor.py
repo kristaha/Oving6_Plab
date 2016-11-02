@@ -24,7 +24,6 @@ class Crash_sensor():
 
         return self.pri_value
 
-
     def calculateSides(self):
 
         ir_proxy_sensor = IRProximitySensor()
@@ -40,9 +39,15 @@ class Crash_sensor():
 
         elif values[1] == True and values[0] == False:
             self.IR_command = "RIGHT"
+            self.pri_value = 1000
 
         elif values[0] == True and values[1] == False:
             self.IR_command = "LEFT"
+            self.pri_value = 1000
 
         return self.IR_command
 
+
+    def getPriValues(self):
+
+        return[self.calculateFront(), self.calculateSides()]

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf97ac92-1cc3-4946-9e74-1216cb6c5e4a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_robot/Arbitrary.py" afterPath="$PROJECT_DIR$/basic_robot/Arbitrary.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_robot/robodemo.py" afterPath="$PROJECT_DIR$/basic_robot/robodemo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_robot/crash_sensor.py" afterPath="$PROJECT_DIR$/basic_robot/crash_sensor.py" />
     </list>
     <ignored path="Oving6_Plab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="crash_sensor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic_robot/crash_sensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="505">
+              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -62,8 +61,8 @@
       <file leaf-file-name="Arbitrary.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic_robot/Arbitrary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -94,7 +93,7 @@
       <file leaf-file-name="reflectance_sensors.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic_robot/reflectance_sensors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="175">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
@@ -104,8 +103,8 @@
       <file leaf-file-name="robodemo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic_robot/robodemo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
+            <state relative-caret-position="2145">
+              <caret line="143" column="12" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -138,9 +137,9 @@
       <list>
         <option value="$PROJECT_DIR$/basic_robot/camera.py" />
         <option value="$PROJECT_DIR$/basic_robot/BBCON.py" />
+        <option value="$PROJECT_DIR$/basic_robot/robodemo.py" />
         <option value="$PROJECT_DIR$/basic_robot/crash_sensor.py" />
         <option value="$PROJECT_DIR$/basic_robot/Arbitrary.py" />
-        <option value="$PROJECT_DIR$/basic_robot/robodemo.py" />
       </list>
     </option>
   </component>
@@ -638,14 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic_robot/reflectance_sensors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -682,6 +673,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/basic_robot/reflectance_sensors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_robot/robodemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="143" column="12" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/FollowLine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -692,26 +699,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/crash_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="505">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic_robot/robodemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/Arbitrary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
