@@ -47,7 +47,7 @@ def crashTest():
     while True:
 
         counter += 1
-        if counter >= 20:
+        if counter >= 5:
 
             f_value = sensor.calculateFront()
             ir_command = sensor.calculateSides()
