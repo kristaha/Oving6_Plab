@@ -45,12 +45,12 @@ def crashTest():
 
         if ir_command == "LEFT":
 
-            motor.left(0.5, 0.1)
+            motor.left(1, 0.01)
 
         elif ir_command == "RIGHT":
-            motor.right(0.5, 0.1)
+            motor.right(1, 0.01)
         else:
-            motor.forward(.5, 0.1)
+            motor.forward(1, 0.01)
 
         if f_value == 10000:
             motor.stop()
