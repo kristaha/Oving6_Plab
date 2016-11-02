@@ -11,7 +11,8 @@ class MotorAction():
         self.arbit = Arbitrary()
         self.value = None
         self.motorList = []
-        self.motorList.append(driveMotor=Motors())
+
+        self.motorList.append(Motors())
 
     def UpdateValue(self):
         self.value = self.arbit.priority_sensor()
