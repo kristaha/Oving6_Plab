@@ -18,7 +18,7 @@ class FollowLine:
         offLineList = [0,1,4,5]
         for i in range(len(self.values)):
             if i in offLineList and nowValue[i] < 0.2:
-                return [nowValue[i]*1000,i]
+                return [(1000-(nowValue[i]*1000)),i]
         return [0,10]
 
     # I arbitary klassen bruker jeg bare retur vediene til isOnLine() som prioriteringsverdier

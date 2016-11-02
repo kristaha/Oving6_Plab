@@ -131,9 +131,9 @@ def followTest():
         if values[0] == 0:
             m.forward(0.2, 0.2)
         elif values[1] == 0 or values[1]==1:
-            m.left(0.2,0.2)
+            m.left(0.2,0.3)
         else:
-            m.right(0.2,0.2)
+            m.right(0.2,0.3)
         time += 1
 
 def cameraTest():
@@ -142,10 +142,10 @@ def cameraTest():
 
 #dancer()
 #crashTest()
-#followTest()
+followTest()
 #followTest()
 #explorer()
 #tourist()
 #cameraTest()
-shoot_panorama()
+#shoot_panorama()
 
