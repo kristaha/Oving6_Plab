@@ -60,8 +60,9 @@ class MotorAction():
     def drive(self):
 
         ZumoButton().wait_for_press()
+
         time = 0
-        while( time < 300):
+        while( time < 100):
             time += 1
             self.UpdateValue()
             value = self.getValue()
