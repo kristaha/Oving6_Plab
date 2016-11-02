@@ -114,12 +114,11 @@ def shoot_panorama(shots=5):
     motors = Motors()
     s = 1
     im = IMR.Imager(image=camera.update()).scale(s,s)
-    rotation_time = 3/shots # At a speed of 0.5(of max), it takes about 3 seconds to rotate 360 degrees
+    rotation_time = 3/shots  # At a speed of 0.5(of max), it takes about 3 seconds to rotate 360 degrees
     for i in range(shots-1):
-        print("Kjør!!!!")
-        motors.right(0.5,rotation_time)
+        motors.right(0.5, rotation_time)
         im = im.concat_horiz(IMR.Imager(image=camera.update()))
-    im.dump_image("C:\\Users\\Martin\\PycharmProjects\\Semester3\\Proglab2\\testPic")
+    im.dump_image("/root/Oving6_Plab/basic_robot/bilder/test.png")
     return im
 
 def followTest():
