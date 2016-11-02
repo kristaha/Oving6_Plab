@@ -9,6 +9,7 @@ class Camera():
         self.img_width = img_width
         self.img_height = img_height
         self.img_rot = img_rot
+        print("Completed setting up camera!")
 
     def get_value(self):  return self.value
 

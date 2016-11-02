@@ -116,6 +116,7 @@ def shoot_panorama(shots=5):
     im = IMR.Imager(image=camera.update()).scale(s,s)
     rotation_time = 3/shots # At a speed of 0.5(of max), it takes about 3 seconds to rotate 360 degrees
     for i in range(shots-1):
+        print("Kjør!!!!")
         motors.right(0.5,rotation_time)
         im = im.concat_horiz(IMR.Imager(image=camera.update()))
     return im
