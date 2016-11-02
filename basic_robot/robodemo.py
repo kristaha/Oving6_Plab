@@ -147,3 +147,4 @@ def cameraTest():
 #tourist()
 #cameraTest()
 shoot_panorama()
+
