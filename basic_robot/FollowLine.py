@@ -11,7 +11,7 @@ class FollowLine:
     def getValueList(self):
         self.reflectanseSensor.reset()
         self.reflectanseSensor.update()
-        return self.reflectanseSensor.get_Value()
+        return self.reflectanseSensor.get_value()
 
     def isOnLine(self):
         nowValue = self.getValueList()
