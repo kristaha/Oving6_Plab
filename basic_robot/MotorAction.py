@@ -75,13 +75,12 @@ class MotorAction():
             self.UpdateValue()
             value = self.getValue()
 
-            if value == None:
+            """if value == None:
 
                 #self.noPri()
-                self.followLine(value.getPriValues()[1])
+                self.followLine(value.getPriValues()[1])"""
 
-
-            elif type(value) == FollowLine():
+            if type(value) == FollowLine():
 
                 self.followLine(value.getPriValues()[1])
 
