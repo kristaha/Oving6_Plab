@@ -27,7 +27,6 @@ class MotorAction():
         """if value == "FORWARD":
             self.motorList[0].stop()
             self.motorList[0].backward(0.3, 0.4)"""
-
         if value == "BACKWARD":
             self.motorList[0].stop()
             self.motorList[0].backward(0.3,0.4)
@@ -50,8 +49,10 @@ class MotorAction():
 
         if indexOfSensor == 0 or indexOfSensor == 1:
             self.motorList[0].left(0.2,0.3)
-        else:
+        elif indexOfSensor == 4 or indexOfSensor == 5:
             self.motorList[0].right(0.2,0.3)
+        else:
+            self.motorList[0].forward(0.2,0.3)
 
     def camera(self,value):
 
@@ -76,7 +77,9 @@ class MotorAction():
 
             if value == None:
 
-                self.noPri()
+                #self.noPri()
+                self.followLine(value.getPriValues()[1])
+
 
             elif type(value) == FollowLine():
 
