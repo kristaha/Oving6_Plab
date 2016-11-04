@@ -85,11 +85,11 @@ class MotorAction():
 
                 #self.followLine(value.getPriValues()[1])
 
-            elif type(value) == Crash_sensor:
+            """elif type(value) == Crash_sensor:
 
                 self.crash(value.getPriValues()[1])
             else:
-                self.camera(0)
+                self.camera(0)"""
             
 
 run = MotorAction()
