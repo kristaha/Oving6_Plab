@@ -4,8 +4,10 @@ from types import *
 from FollowLine import FollowLine
 from crash_sensor import Crash_sensor
 from zumo_button import ZumoButton
+from processPic import ProcessPic
 
 class MotorAction():
+
 
     def __init__(self):
 
@@ -68,28 +70,24 @@ class MotorAction():
     def drive(self):
 
         ZumoButton().wait_for_press()
-        print("Hei")
         time = 0
         while time < 50:
             time += 1
             self.UpdateValue()
             value = self.getValue()
 
-            """if value == None:
 
-                self.noPri()
-                self.followLine(value.getPriValues()[1])"""
+            if type(value) == ProcessPic:
+                self.camera(1)
 
-            if type(value) == FollowLine():
-                print("hey")
 
-                #self.followLine(value.getPriValues()[1])
-
-            """elif type(value) == Crash_sensor:
+            elif type(value) == Crash_sensor:
 
                 self.crash(value.getPriValues()[1])
             else:
-                self.camera(0)"""
+
+                self.camera(0)
+
             
 
 run = MotorAction()
