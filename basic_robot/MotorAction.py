@@ -86,7 +86,7 @@ class MotorAction():
                 self.crash(value.getPriValues()[1])
             else:
 
-                self.camera(0)
+                self.followLine(value.getPriValues()[1])
 
             
 
