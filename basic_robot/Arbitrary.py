@@ -22,7 +22,7 @@ class Arbitrary:
         sens_list = [self.crash_sensor]#, self.follow_line] #  + self.camera_sensor
         highest_value = max(value_list)
 
-        if highest_value == 0:
+        if highest_value != 1000:
             return self.follow_line
             #return None
         for i in range(len(value_list)):
