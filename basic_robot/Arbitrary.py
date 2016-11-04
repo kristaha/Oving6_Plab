@@ -22,8 +22,8 @@ class Arbitrary:
         highest_value = max(value_list)
 
         if highest_value == 0:
-            return self.follow_line
-
+            #return self.follow_line
+            return None
         for i in range(len(value_list)):
 
             if value_list[i] == highest_value:
