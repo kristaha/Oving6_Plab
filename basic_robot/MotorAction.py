@@ -83,7 +83,7 @@ class MotorAction():
             if type(value) == FollowLine():
                 print("hey")
 
-                self.followLine(value.getPriValues()[1])
+                #self.followLine(value.getPriValues()[1])
 
             elif type(value) == Crash_sensor:
 
