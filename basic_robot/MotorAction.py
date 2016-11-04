@@ -75,14 +75,6 @@ class MotorAction():
             self.UpdateValue()
             value = self.getValue()
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-
-
->>>>>>> origin/master
             """if value == None:
 
                 self.noPri()
