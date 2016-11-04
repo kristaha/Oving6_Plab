@@ -75,7 +75,7 @@ class MotorAction():
             self.UpdateValue()
             value = self.getValue()
 
-            if value = None:
+            if value == None:
 
                 self.noPri()
 
