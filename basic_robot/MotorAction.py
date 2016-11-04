@@ -52,7 +52,7 @@ class MotorAction():
         elif indexOfSensor == 4 or indexOfSensor == 5:
             self.motorList[0].right(0.2,0.3)
         else:
-            self.motorList[0].forward(0.2,0.3)
+            self.motorList[0].forward(0.2,0.1)
 
     def camera(self,value):
 
@@ -68,7 +68,7 @@ class MotorAction():
     def drive(self):
 
         ZumoButton().wait_for_press()
-
+        print("Hei")
         time = 0
         while time < 50:
             time += 1
