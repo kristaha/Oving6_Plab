@@ -14,33 +14,17 @@ class ProcessPic:
         return IMR.Imager(image=self.cam.update().scale(self.s, self.s))
 
     def process(self):
-        #self.im = self.takePic()
+        self.im = self.takePic()
         x, y = range(self.im.xmax), range(self.im.ymax)
         redCounter = 0
-        blueCounter = 0
-        oppeVenstreRød, nedeHøyreRød, oppeVenstreGrønn, nedeHøyreGrønn = None, None, None, None
         for i in y:
             for j in x:
-                pix = self.im.get_pixel(j, i) # HAR BRUK BLÅ OG IKKE GRØNN!!!
-                if (pix[1] < 100) and (pix[2] < 100):
-                    if redCounter == 0:
-                        oppeVenstreRød = [j, i]
-                        redCounter += 1
-                    nedeHøyreRød = [j, i]
-                elif (pix[0] < 100) and (pix[1] < 100):
-                    if blueCounter == 0:
-                        oppeVenstreGrønn = [j, i]
-                        blueCounter += 1
-                    nedeHøyreGrønn = [j, i]
-        print(oppeVenstreRød, nedeHøyreRød, oppeVenstreGrønn, nedeHøyreGrønn)
-        print(min([oppeVenstreRød[0], nedeHøyreRød[0]]) * min([oppeVenstreRød[1], nedeHøyreRød[1]]))
-        print(min([oppeVenstreGrønn[0], nedeHøyreGrønn[0]]) * min([oppeVenstreGrønn[1], nedeHøyreGrønn[1]]))
-        if redCounter > 400:
+                pix = self.im.get_pixel(j, i)  # HAR BRUK BLÅ OG IKKE GRØNN!!!
+                if pix[0] > 200 and pix[1] < 110:
+                    redCounter += 1
+        if redCounter >= 300:
             return 1000
-        elif blueCounter > 400:
-            return 0
-        else:
-            pass #self.process()
+        return 0
 
-test = ProcessPic()
-print(test.process())
+#test = ProcessPic()
+#print(test.process())
