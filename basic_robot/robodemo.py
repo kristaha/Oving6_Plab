@@ -145,9 +145,9 @@ def cameraTest():
 
 
 #dancer()
-crashTest()
+#crashTest()
 #followTest()
 #explorer()
 #tourist()
-#cameraTest()
+cameraTest()
 #test = ProcessPic()
