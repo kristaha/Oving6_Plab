@@ -76,7 +76,6 @@ class MotorAction():
             self.UpdateValue()
             value = self.getValue()
 
-
             if type(value) == ProcessPic:
                 self.camera(1)
 
