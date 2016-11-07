@@ -70,7 +70,7 @@ class MotorAction():
 
         ZumoButton().wait_for_press()
         time = 0
-        while time < 50:
+        while time < 100:
 
             time += 1
             self.UpdateValue()
