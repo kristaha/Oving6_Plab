@@ -13,37 +13,34 @@ class ProcessPic:
     def takePic(self):
         return IMR.Imager(image=self.cam.update().scale(self.s, self.s))
 
-    def process1(self):
-        #self.im = self.takePic()
-        x, y = range(self.im.xmax), range(self.im.ymax)
-        redCounter = 0
-        blueCounter = 0
-        oppeVenstreRød, nedeHøyreRød, oppeVenstreGrønn, nedeHøyreGrønn = None, None, None, None
+    def redShift(self, im):
+        x, y = range(im.xmax), range(im.ymax)
         for i in y:
             for j in x:
-                pix = self.im.get_pixel(j, i)  # HAR BRUK BLÅ OG IKKE GRØNN!!!
+                pix = im.get_pixel(j, i)  # HAR BRUK BLÅ OG IKKE GRØNN!!!
                 if (pix[1] < 100) and (pix[2] < 100):
-                    self.im.set_pixel(j, i, (255,0,0))
-                elif (pix[0] < 100) and (pix[1] < 100):
-                    self.im.set_pixel(j, i, (0,255,0))
+                    im.set_pixel(j, i, (255,0,0))
                 else:
-                    self.im.set_pixel(j, i, (0,0,255))
-        self.im.display()
+                    im.set_pixel(j, i, (0,0,255))
+                    counter = 0
+        im.display()
+        return im
 
     def process2(self):
         # self.im = self.takePic()
-        self.im.display()
-        x, y = range(self.im.xmax), range(self.im.ymax)
+        nyIm = self.redShift(self.im)
+        x, y = range(nyIm.xmax), range(nyIm.ymax)
         redCounter = 0
-        blueCounter = 0
-        oppeVenstreRød, nedeHøyreRød, oppeVenstreGrønn, nedeHøyreGrønn = None, None, None, None
         for i in y:
             for j in x:
-                pix = self.im.get_pixel(j, i)  # HAR BRUK BLÅ OG IKKE GRØNN!!!
+                pix = nyIm.get_pixel(j, i)  # HAR BRUK BLÅ OG IKKE GRØNN!!!
                 print(pix)
                 if pix[0] > 200 and pix[1] < 110:
                     redCounter += 1
-        return redCounter
+        print(redCounter)
+        if redCounter > 800:
+            return 1000
+        return 1
 
     def process3(self):
         # self.im = self.takePic()
