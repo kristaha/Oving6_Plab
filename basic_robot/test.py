@@ -38,7 +38,7 @@ class ProcessPic:
                 if pix[0] > 200 and pix[1] < 110:
                     redCounter += 1
         print(redCounter)
-        if redCounter > 800:
+        if redCounter > 700:
             return 1000
         return 1
 
@@ -72,6 +72,6 @@ class ProcessPic:
             pass  # self.process()
 
 
-#test = ProcessPic()
-#print(test.process2())
+test = ProcessPic()
+print(test.process2())
 
