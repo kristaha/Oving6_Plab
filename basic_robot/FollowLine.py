@@ -17,7 +17,7 @@ class FollowLine:
     def isOnLine(self):
         nowValue = self.getValueList()
         offLineList = [0,1,4,5]
-        for i in range(len(self.values)):
+        for i in range(6):
             if i in offLineList and nowValue[i] < 0.2:
                 return [(1000-(nowValue[i]*1000)),i]
         return [0,10]
