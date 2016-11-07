@@ -38,7 +38,6 @@ class MotorAction():
             self.crashRight()
 
 
-
     def crashLeft(self):
         self.motorList[0].stop()
         self.motorList[0].right(0.4,0.4)
@@ -72,6 +71,7 @@ class MotorAction():
         ZumoButton().wait_for_press()
         time = 0
         while time < 50:
+
             time += 1
             self.UpdateValue()
             value = self.getValue()
