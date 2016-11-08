@@ -11,7 +11,9 @@ class ProcessPic:
         self.s = 1
 
     def takePic(self):
-        return IMR.Imager(image=self.cam.update()).scale(self.s, self.s)
+        im = IMR.Imager(image=self.cam.update()).scale(self.s, self.s)
+        im.dump("/root/Oving6_Plab/basic_robot/bilder/bilde.png")
+        return im
 
 
     def redShift(self, im):

@@ -7,7 +7,7 @@ class ProcessPic:
 
     def __init__(self):
         self.cam = Camera()
-        self.im = IMR.Imager("bilder/test2.png")
+        self.im = IMR.Imager("bilder/image.png")
         self.s = 1
 
     def takePic(self):
@@ -18,7 +18,7 @@ class ProcessPic:
         for i in y:
             for j in x:
                 pix = im.get_pixel(j, i)  # HAR BRUK BLÅ OG IKKE GRØNN!!!
-                if (pix[1] < 100) and (pix[2] < 100):
+                if pix[0] > 200 and (pix[1] < 80) and (pix[2] < 80):
                     im.set_pixel(j, i, (255,0,0))
                 else:
                     im.set_pixel(j, i, (0,0,255))
@@ -28,13 +28,13 @@ class ProcessPic:
 
     def process2(self):
         # self.im = self.takePic()
+        self.im.display()
         nyIm = self.redShift(self.im)
         x, y = range(nyIm.xmax), range(nyIm.ymax)
         redCounter = 0
         for i in y:
             for j in x:
                 pix = nyIm.get_pixel(j, i)  # HAR BRUK BLÅ OG IKKE GRØNN!!!
-                print(pix)
                 if pix[0] > 200 and pix[1] < 110:
                     redCounter += 1
         print(redCounter)
@@ -72,6 +72,6 @@ class ProcessPic:
             pass  # self.process()
 
 
-test = ProcessPic()
-print(test.process2())
+#test = ProcessPic()
+#print(test.process2())
 
