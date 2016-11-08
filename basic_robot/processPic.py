@@ -12,7 +12,7 @@ class ProcessPic:
 
     def takePic(self):
         im = IMR.Imager(image=self.cam.update()).scale(self.s, self.s)
-        im.dump_image("/root/Oving6_Plab/basic_robot/bilder/bilde.png")
+        #im.dump_image("/root/Oving6_Plab/basic_robot/bilder/bilde.png")
         return im
 
 
@@ -38,7 +38,7 @@ class ProcessPic:
                 if pix[0] > 200 and (pix[1] < 80) and (pix[2] < 80):
                     redCounter += 1
         print(redCounter)
-        if redCounter > 900:
+        if redCounter > 700:
             return 1000
         return 1
 
