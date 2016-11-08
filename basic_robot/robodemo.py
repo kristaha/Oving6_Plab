@@ -150,5 +150,5 @@ def cameraTest():
 #explorer()
 #tourist()
 #cameraTest()
-test = ProcessPic()
-test.process()
+#test = ProcessPic()
+#test.process()
