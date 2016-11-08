@@ -62,6 +62,7 @@ class MotorAction():
     def noPri(self):
         self.motorList[0].forward(0.2,0.3)
 
+#GPIO.cleanup()
 ## Kjøre def
     def drive(self):
 
