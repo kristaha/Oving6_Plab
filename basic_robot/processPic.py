@@ -12,7 +12,7 @@ class ProcessPic:
 
     def takePic(self):
         im = IMR.Imager(image=self.cam.update()).scale(self.s, self.s)
-        im.dump_image("/root/Oving6_Plab/basic_robot/bilder/bilde.png")
+        #im.dump_image("/root/Oving6_Plab/basic_robot/bilder/bilde.png")
         return im
 
 
