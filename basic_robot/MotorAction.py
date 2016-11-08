@@ -49,11 +49,11 @@ class MotorAction():
     def followLine(self,indexOfSensor):
 
         if indexOfSensor == 0 or indexOfSensor == 1:
-            self.motorList[0].left(0.3,0.2)
+            self.motorList[0].left(0.4,0.2)
         elif indexOfSensor == 4 or indexOfSensor == 5:
-            self.motorList[0].right(0.3,0.2)
+            self.motorList[0].right(0.4,0.2)
         else:
-            self.motorList[0].forward(0.4,0.1)
+            self.motorList[0].forward(0.5,0.1)
 
     def camera(self):
         self.motorList[0].stop()
@@ -64,9 +64,10 @@ class MotorAction():
 ## Kjøre def
     def drive(self):
 
+        #GPIO.cleanup()
         ZumoButton().wait_for_press()
         time = 0
-        while time < 100:
+        while time < 130:
 
             time += 1
             self.UpdateValue()

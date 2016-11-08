@@ -38,7 +38,7 @@ class ProcessPic:
                 if pix[0] > 200 and (pix[1] < 80) and (pix[2] < 80):
                     redCounter += 1
         print(redCounter)
-        if redCounter > 700:
+        if redCounter > 400:
             return 1000
         return 1
 
