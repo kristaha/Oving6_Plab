@@ -85,7 +85,6 @@ class MotorAction():
 
                 self.followLine(value.getPriValues()[1])
 
-            
 
 run = MotorAction()
 run.drive()
