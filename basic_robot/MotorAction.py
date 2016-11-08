@@ -59,8 +59,6 @@ class MotorAction():
         self.motorList[0].stop()
 
 
-    def noPri(self):
-        self.motorList[0].forward(0.2,0.3)
 
 #GPIO.cleanup()
 ## Kjøre def
