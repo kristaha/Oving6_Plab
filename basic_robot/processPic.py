@@ -35,8 +35,9 @@ class ProcessPic:
         for i in y:
             for j in x:
                 pix = im.get_pixel(j, i)
-                if pix[0] > 200 and (pix[1] < 80) and (pix[2] < 80): #pix[0] > 200 and pix[1] < 110:
+                if pix[0] > 200 and (pix[1] < 80) and (pix[2] < 80):
                     redCounter += 1
+        print(redCounter)
         if redCounter > 900:
             return 1000
         return 1
