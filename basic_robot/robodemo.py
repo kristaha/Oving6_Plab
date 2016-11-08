@@ -149,5 +149,5 @@ def cameraTest():
 #followTest()
 #explorer()
 #tourist()
-cameraTest()
+#cameraTest()
 #test = ProcessPic()

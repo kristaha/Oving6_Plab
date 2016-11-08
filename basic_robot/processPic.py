@@ -13,6 +13,7 @@ class ProcessPic:
     def takePic(self):
         return IMR.Imager(image=self.cam.update().scale(self.s, self.s))
 
+
     def redShift(self, im):
         x, y = range(im.xmax), range(im.ymax)
         for i in y:
@@ -26,15 +27,15 @@ class ProcessPic:
 
     def process(self):
         im = self.takePic()
-        nyIm = self.redShift(im)
-        x, y = range(nyIm.xmax), range(nyIm.ymax)
+        #nyIm = self.redShift(im)
+        x, y = range(im.xmax), range(im.ymax)
         redCounter = 0
         for i in y:
             for j in x:
-                pix = nyIm.get_pixel(j, i)
-                if pix[0] > 200 and pix[1] < 110:
+                pix = im.get_pixel(j, i)
+                if pix[1] < 100 and pix[2] < 100: #pix[0] > 200 and pix[1] < 110:
                     redCounter += 1
-        if redCounter > 700:
+        if redCounter > 900:
             return 1000
         return 1
 
