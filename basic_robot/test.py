@@ -7,7 +7,7 @@ class ProcessPic:
 
     def __init__(self):
         self.cam = Camera()
-        self.im = IMR.Imager("bilder/image.png")
+        self.im = IMR.Imager("bilder/bilde.png")
         self.s = 1
 
     def takePic(self):
@@ -72,6 +72,6 @@ class ProcessPic:
             pass  # self.process()
 
 
-#test = ProcessPic()
-#print(test.process2())
+test = ProcessPic()
+print(test.process2())
 
