@@ -55,12 +55,9 @@ class MotorAction():
         else:
             self.motorList[0].forward(0.4,0.1)
 
-    def camera(self,value):
+    def camera(self):
+        self.motorList[0].stop()
 
-        if value == 1:
-            self.motorList[0].stop()
-        else:
-            self.motorList[0].forward(0.6,0.2)
 
     def noPri(self):
         self.motorList[0].forward(0.2,0.3)
@@ -77,7 +74,7 @@ class MotorAction():
             value = self.getValue()
 
             if type(value) == ProcessPic:
-                self.camera(1)
+                self.camera()
 
 
             elif type(value) == Crash_sensor:
