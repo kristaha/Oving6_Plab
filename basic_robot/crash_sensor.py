@@ -16,7 +16,7 @@ class Crash_sensor():
         u_sensor = Ultrasonic()
         u_sensor.update()
         distance = u_sensor.get_value()
-        if distance < 10:
+        if distance < 5:
             self.pri_value = 1000
 
         else:
