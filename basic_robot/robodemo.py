@@ -145,7 +145,7 @@ def cameraTest():
 
 
 #dancer()
-crashTest()
+#crashTest()
 #followTest()
 #explorer()
 #tourist()
