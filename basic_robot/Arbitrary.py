@@ -18,7 +18,7 @@ class Arbitrary:
         #pri_value_follow = self.follow_line.getPriValues()
 
         pri_value_camera = self.camera_sensor.process()
-        sleep(0.3)
+        sleep(0.03)
         print(pri_value_camera)
 
         value_list = [pri_value_crash[0],pri_value_camera]
