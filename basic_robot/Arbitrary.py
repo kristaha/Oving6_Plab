@@ -16,10 +16,10 @@ class Arbitrary:
         pri_value_crash = self.crash_sensor.getPriValues()
         pri_value_follow = self.follow_line.getPriValues()
 
-        #pri_value_camera = self.camera_sensor.process()
+        pri_value_camera = self.camera_sensor.process()
 
-        value_list = [pri_value_crash[0]]#,pri_value_camera]
-        sens_list = [self.crash_sensor]#, self.camera_sensor]
+        value_list = [pri_value_crash[0],pri_value_camera]
+        sens_list = [self.crash_sensor, self.camera_sensor]
         highest_value = max(value_list)
 
         if highest_value != 1000:
