@@ -14,9 +14,10 @@ class Arbitrary:
     def priority_sensor(self):
 
         pri_value_crash = self.crash_sensor.getPriValues()
-        pri_value_follow = self.follow_line.getPriValues()
+        #pri_value_follow = self.follow_line.getPriValues()
 
         pri_value_camera = self.camera_sensor.process()
+        print(pri_value_camera)
 
         value_list = [pri_value_crash[0],pri_value_camera]
         sens_list = [self.crash_sensor, self.camera_sensor]
