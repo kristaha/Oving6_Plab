@@ -71,8 +71,9 @@ class MotorAction():
             time += 1
             self.UpdateValue()
             value = self.getValue()
-
+            print("--")
             if type(value) == ProcessPic:
+                print("CAMERA")
                 self.camera()
 
 

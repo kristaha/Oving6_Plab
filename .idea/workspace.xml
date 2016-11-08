@@ -17,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Oving6_Plab$robodemo.coverage" NAME="robodemo Coverage Results" MODIFIED="1478601047668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_robot" />
-    <SUITE FILE_PATH="coverage/Oving6_Plab$MotorAction.coverage" NAME="MotorAction Coverage Results" MODIFIED="1478601075822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_robot" />
+    <SUITE FILE_PATH="coverage/Oving6_Plab$MotorAction.coverage" NAME="MotorAction Coverage Results" MODIFIED="1478602658628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_robot" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -47,7 +47,6 @@
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
-                <marker date="1478599631000" expanded="true" signature="149:242" ph="..." />
               </folding>
             </state>
           </provider>
@@ -56,13 +55,9 @@
       <file leaf-file-name="processPic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic_robot/processPic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <marker date="1478599631000" expanded="true" signature="104:1151" ph="..." />
-                <marker date="1478599631000" expanded="true" signature="129:166" ph="..." />
-                <marker date="1478599631000" expanded="true" signature="1150:1151" ph="..." />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,8 +92,8 @@
       <file leaf-file-name="MotorAction.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic_robot/MotorAction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+            <state relative-caret-position="266">
+              <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -136,6 +131,7 @@
         <option value="$PROJECT_DIR$/basic_robot/BBCON.py" />
         <option value="$PROJECT_DIR$/basic_robot/crash_sensor.py" />
         <option value="$PROJECT_DIR$/basic_robot/robodemo.py" />
+        <option value="$PROJECT_DIR$/basic_robot/processPic.py" />
         <option value="$PROJECT_DIR$/basic_robot/MotorAction.py" />
       </list>
     </option>
@@ -490,17 +486,26 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="731" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -567,7 +572,6 @@
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
-            <marker date="1478599631000" expanded="true" signature="149:242" ph="..." />
           </folding>
         </state>
       </provider>
@@ -576,11 +580,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1478599631000" expanded="true" signature="104:1151" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="129:166" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="1150:1151" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +626,6 @@
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
-            <marker date="1478599631000" expanded="true" signature="149:242" ph="..." />
           </folding>
         </state>
       </provider>
@@ -635,11 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1478599631000" expanded="true" signature="104:1151" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="129:166" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="1150:1151" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +680,6 @@
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
-            <marker date="1478599631000" expanded="true" signature="149:242" ph="..." />
           </folding>
         </state>
       </provider>
@@ -694,11 +688,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1478599631000" expanded="true" signature="104:1151" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="129:166" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="1150:1151" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,29 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic_robot/processPic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1478599631000" expanded="true" signature="104:1151" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="129:166" ph="..." />
-            <marker date="1478599631000" expanded="true" signature="1150:1151" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic_robot/Arbitrary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-            <marker date="1478599631000" expanded="true" signature="149:242" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/FollowLine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -900,6 +867,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/basic_robot/robodemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="147" column="11" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/crash_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -910,18 +885,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic_robot/robodemo.py">
+    <entry file="file://$PROJECT_DIR$/basic_robot/Arbitrary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="147" column="11" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+        <state relative-caret-position="225">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_robot/processPic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic_robot/MotorAction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+        <state relative-caret-position="266">
+          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
