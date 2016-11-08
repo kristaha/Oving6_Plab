@@ -11,7 +11,7 @@ class ProcessPic:
         self.s = 1
 
     def takePic(self):
-        return IMR.Imager(image=self.cam.update().scale(self.s, self.s))
+        return IMR.Imager(image=self.cam.update()).scale(self.s, self.s)
 
 
     def redShift(self, im):
