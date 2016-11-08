@@ -53,7 +53,7 @@ class MotorAction():
         elif indexOfSensor == 4 or indexOfSensor == 5:
             self.motorList[0].right(0.3,0.2)
         else:
-            self.motorList[0].forward(0.4,0.1)
+            self.motorList[0].forward(0.5,0.1)
 
     def camera(self):
         self.motorList[0].stop()
